@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body .nav {
+  z-index: 100;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #818181;
+  padding: 0 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+body .nav ul {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 55%;
+  text-transform: uppercase;
+}
+
+body .nav ul .active {
+  color: purple;
+}
+
+body .nav ul a {
+  color: #B9f1da;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body .nav ul a:hover {
+  color: purple;
+}
+
+body .nav .reserve a button {
+  border: none;
+  background-color: purple;
+  padding: .3rem 1rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .nav .reserve a button:hover {
+  background-color: white;
+  color: purple;
+}
+
+body .nav .reserve h1 {
+  font-family: "Cinzel", serif;
+  color: #B9f1da;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .nav .reserve h1 h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+body .nav .reserve h1:hover {
+  color: purple;
+}
+
+body .booking-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 7% 5%;
+}
+
+body .booking-heading .heading {
+  position: relative;
+  width: 100%;
+}
+
+body .booking-heading .heading h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+body .booking-heading .heading p {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  margin-bottom: 2rem;
+}
+
+body .booking-heading .heading p {
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .form form {
+  color: black;
+  text-align: start;
+}
+
+body .form form label {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2rem;
+  color: purple;
+}
+
+body .form form input, body .form form select {
+  font-size: 1rem;
+  width: 20rem;
+  height: 3rem;
+  background-color: #e3e3e3;
+  border: none;
+  color: #424242;
+  padding-right: 4%;
+}
+
+body .form form input::-webkit-input-placeholder, body .form form select::-webkit-input-placeholder {
+  color: #424242;
+}
+
+body .form form input:-ms-input-placeholder, body .form form select:-ms-input-placeholder {
+  color: #424242;
+}
+
+body .form form input::-ms-input-placeholder, body .form form select::-ms-input-placeholder {
+  color: #424242;
+}
+
+body .form form input::placeholder, body .form form select::placeholder {
+  color: #424242;
+}
+
+body .form form select option {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: .5rem .5rem;
+}
+
+body .form form input:focus {
+  border: 1px solid purple;
+}
+
+body .form form .form-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+body .form form .form-flex .form-label {
+  background-color: #f1f1f1;
+  padding: 5% 5%;
+}
+
+body .form form .form-flex .form-label .name, body .form form .form-flex .form-label .mobile, body .form form .form-flex .form-label .email, body .form form .form-flex .form-label .number, body .form form .form-flex .form-label .date, body .form form .form-flex .form-label .time {
+  padding-left: 1%;
+}
+
+body .form form .form-flex .form-label .date {
+  font-size: 1rem;
+}
+
+body .form form .form-flex button {
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: .5rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  background-color: purple;
+}
+
+body .form form .form-flex button:hover {
+  background-color: #c100c1;
+}
+
+body .form form .form-flex button {
+  width: 100%;
+}
+
+body .chair {
+  padding: 7% 10% 3.5% 10%;
+  text-align: center;
+}
+
+body .chair h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+body .chair .chair-sec1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+body .chair .chair-sec1 .chair-image {
+  height: 18rem;
+  width: 15rem;
+}
+
+body .chair .chair-sec1 img {
+  height: 100%;
+  width: 100%;
+}
+
+body .chair .chair-sec2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .chair .chair-sec2 .chair-image {
+  height: 12rem;
+  width: 15rem;
+}
+
+body .chair .chair-sec2 img {
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=table-booking.css.map */

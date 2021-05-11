@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+$h1: 'Cinzel', serif;
+$p: 'Poppins', sans-serif;
+
+@mixin between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin btn {
+  button {
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    font-family: $p;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    transition: all .4s;
+    background-color: purple;
+    &:hover {
+      background-color: #c100c1;
+      //background-color: #7e4eac;
+    }
+  }
+}
+
+@mixin padding {
+  padding: 5% 5%;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin h1 {
+  h1 {
+    font-family: $h1;
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+@mixin h3 {
+  h3 {
+    font-family: $h1;
+    //font-size: 3.5rem;
+    font-weight: 500;
+    //margin-bottom: 1.5rem;
+    text-transform: capitalize;
+  }
+}
+
+@mixin p {
+  p {
+    font-family: $p;
+    color: gray;
+    margin-bottom: 2rem;
+  }
+}
+
+@mixin nav {
+  //.nav {
+  z-index: 100;
+  position: fixed;
+  //top: 0;
+  display: flex;
+  align-items: center;
+  background-color: #818181;
+  padding: 0 10%;
+  justify-content: space-between;
+  font-family: $p;
+  width: 100%;
+  ul {
+    height: 8vh;
+    //background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    text-transform: uppercase;
+    .active {
+      color: purple;
+    }
+    a {
+      color: #B9f1da;
+      transition: .3s;
+      &:hover {
+        color: purple;
+      }
+    }
+  }
+  .reserve {
+    a {
+      button {
+        border: none;
+        background-color: purple;
+        padding: .3rem 1rem;
+        text-transform: uppercase;
+        font-family: $p;
+        font-size: .9rem;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+        transition: .5s;
+        &:hover {
+          background-color: white;
+          //border: 1px solid purple;
+          color: purple;
+        }
+      }
+    }
+  }
+}
+
+@mixin nav-name {
+  @include nav();
+  .reserve {
+    h1 {
+      @include h1();
+      font-family: $h1;
+      color: #B9f1da;
+      transition: .5s;
+
+      &:hover {
+        color: purple;
+      }
+    }
+  }
+}
+
+@mixin secondary-heading {
+  //.booking-heading {
+  //background-color: greenyellow;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  padding: 7% 5%;
+  .heading {
+    position: relative;
+    //background-color: red;
+    @include h1();
+    @include p();
+    width: 100%;
+    p {
+      width: 60%;
+      //text-align: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  //}
+}
+
+//}

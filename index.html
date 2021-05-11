@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ATK restaurant</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+
+<div class="nav">
+    <ul id="ul">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="login.html">Reservations</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="reserve">
+        <a href="table-booking.html">
+            <button>BOOK A table</button>
+        </a>
+    </div>
+</div>
+
+
+<div class="home">
+    <div class="home-infos">
+        <h1>ATK Food Garden</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda consectetur, corporis dignissimos
+            dolores eligendi expedita maxime modi necessitatibus quaerat quo sapiente, sunt tenetur! Adipisci aut
+            consectetur illum odio perferendis.</p>
+        <div class="btn-arrow">
+            <a href="table-booking.html">
+                <button>BOOK A TABLE</button>
+            </a>
+            <svg xmlns="http://www.w3.org/2000/svg" data-name="Слой 1" id="svg1" viewBox="0 0 128 128"><title/>
+                <path d="M64,0a64,64,0,1,0,64,64A64.07,64.07,0,0,0,64,0Zm0,124a60,60,0,1,1,60-60A60.07,60.07,0,0,1,64,124Z"/>
+                <path d="M104.35,64.76l.06-.2a.84.84,0,0,0,0-.17,2,2,0,0,0,0-.78.84.84,0,0,0,0-.17l-.06-.2a1.28,1.28,0,0,0-.11-.2.55.55,0,0,0-.08-.15,1.79,1.79,0,0,0-.25-.31l-30-30a2,2,0,0,0-2.82,2.82L97.67,62H25.5a2,2,0,0,0,0,4H97.67L71.09,92.59a2,2,0,1,0,2.82,2.82l30-30a1.79,1.79,0,0,0,.25-.31.55.55,0,0,0,.08-.15A1.28,1.28,0,0,0,104.35,64.76Z"/>
+            </svg>
+        </div>
+    </div>
+    <div class="img">
+        <img src="images/bgmain.png" alt="this is background image">
+    </div>
+</div>
+
+
+<div class="about" id="about">
+    <div class="about-info">
+        <h1>About <br> ATK Food Garden</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi at corporis cupiditate, deserunt
+            ducimus error et ex expedita impedit iusto laudantium neque, nobis odit omnis porro quam quibusdam
+            reiciendis reprehenderit veritatis. Accusamus cupiditate fugit in laudantium quos ratione ut.</p>
+        <a href="about.html">
+            <button class="home-btn">Discover Us More</button>
+        </a>
+    </div>
+    <div class="about-img">
+        <div class="img-about" id="img-sec1">
+            <div class="sec11">
+                <img src="images/chef1.jpg" alt="chef1 picture">
+            </div>
+            <div class="sec12">
+                <img src="images/bbq1.jpg" alt="bbq picture">
+            </div>
+        </div>
+        <div class="img-about" id="img-sec2">
+            <div class="sec21">
+                <img src="images/chef3.jpg" alt="waiter picture">
+            </div>
+            <div class="sec22">
+                <img src="images/chef2.jpg" alt="chef2 picture">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu" id="menu">
+    <h1>MENU</h1>
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem commodi eum,
+            exercitationem facilis molestiae neque pariatur placeat quam sunt. consectetur adipisicing elit. Alias
+            dolore, dolorem dolores, ea illo in ipsum iure nam nihil non porro provident qui quo. Aliquid cupiditate
+            iste labore minus sunt.</p>
+    </div>
+    <div class="menus-title">
+        <input type="radio" name="radio-input" class="radio" id="breakfast-radio" onclick="showBreakfast()" checked>
+        <label class="label" for="breakfast-radio">Breakfast</label>
+        <input type="radio" name="radio-input" class="radio" id="lunch-radio" onclick="showLunch()">
+        <label class="label" for="lunch-radio">Lunch</label>
+        <input type="radio" name="radio-input" class="radio" id="dinner-radio" onclick="showDinner()">
+        <label class="label" for="dinner-radio">Dinner</label>
+        <input type="radio" name="radio-input" class="radio" id="drinks-radio" onclick="showDrinks()">
+        <label class="label" for="drinks-radio">Drinks</label>
+        <input type="radio" name="radio-input" class="radio" id="salad-radio" onclick="showSalad()">
+        <label class="label" for="salad-radio">Salad</label>
+        <input type="radio" name="radio-input" class="radio" id="desserts-radio" onclick="showDesserts()">
+        <label class="label" for="desserts-radio">Desserts</label>
+    </div>
+    <div class="breakfast" id="breakfast">
+        <div class="sec1">
+            <div class="food">
+                <div class="foodimage"><img src="images/b1.jpg" alt="Breakfast food Image"></div>
+                <h3>Egg Pastato</h3>
+                <p>12$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/b2.jpg" alt="Breakfast food Image"></div>
+                <h3>Bread Egg</h3>
+                <p>10$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/b3.jpg" alt="Breakfast food Image"></div>
+                <h3>Chicken Sharma</h3>
+                <p>20$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/d1.jpg" alt="Breakfast food Image"></div>
+                <h3>Fresh Fish</h3>
+                <p>30$</p>
+            </div>
+        </div>
+
+        <div class="sec2">
+            <div class="food">
+                <div class="foodimage"><img src="images/b4.jpg" alt="Breakfast food Image"></div>
+                <h3>Noodles Prawn</h3>
+                <p>25$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/b6.jpg" alt="Breakfast food Image"></div>
+                <h3>Meat Egg</h3>
+                <p>30$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/b7.jpg" alt="Breakfast food Image"></div>
+                <h3>Pasta Meat</h3>
+                <p>30$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/d5.jpg" alt="Breakfast food Image"></div>
+                <h3>Meat & Bean</h3>
+                <p>35$</p>
+            </div>
+        </div>
+    </div>
+    <div class="lunch" id="lunch">
+        <div class="sec1">
+            <div class="food">
+                <div class="foodimage"><img src="images/l1.jpg" alt="Lunch food Image"></div>
+                <h3>Prawn Noodles</h3>
+                <p>12$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/l2.jpg" alt="Lunch food Image"></div>
+                <h3>Soupy meat</h3>
+                <p>25$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/l3.jpg" alt="Lunch food Image"></div>
+                <h3>lamb meat</h3>
+                <p>20$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/l4.jpg" alt="Lunch food Image"></div>
+                <h3>Samusha Fry</h3>
+                <p>30$</p>
+            </div>
+        </div>
+
+        <div class="sec2">
+            <div class="food">
+                <div class="foodimage"><img src="images/l5.jpg" alt="Lunch food Image"></div>
+                <h3>Bowl Noodles</h3>
+                <p>25$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/l6.jpg" alt="Lunch food Image"></div>
+                <h3>Salmon Cut</h3>
+                <p>30$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/b7.jpg" alt="Lunch food Image"></div>
+                <h3>Pasta Meat</h3>
+                <p>30$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/d5.jpg" alt="Lunch food Image"></div>
+                <h3>Meat & Bean</h3>
+                <p>35$</p>
+            </div>
+        </div>
+    </div>
+    <div class="dinner" id="dinner">
+        <div class="sec1">
+            <div class="food">
+                <div class="foodimage"><img src="images/l1.jpg" alt="Dinner food Image"></div>
+                <h3>Prawn Noodles</h3>
+                <p>12$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/d1.jpg" alt="Dinner food Image"></div>
+                <h3>Sardine cut</h3>
+                <p>10$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/l3.jpg" alt="Dinner food Image"></div>
+                <h3>lamb meat</h3>
+                <p>20$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/l5.jpg" alt="Dinner food Image"></div>
+                <h3>Bowl Noodles</h3>
+                <p>30$</p>
+            </div>
+        </div>
+
+        <div class="sec2">
+            <div class="food">
+                <div class="foodimage"><img src="images/d3.jpg" alt="Dinner food Image"></div>
+                <h3>Soupy Meat</h3>
+                <p>25$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/d4.jpg" alt="Dinner food Image"></div>
+                <h3>Egg Curry</h3>
+                <p>15$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/d5.jpg" alt="Dinner food Image"></div>
+                <h3>Meat & Bean</h3>
+                <p>35$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/d6.jpg" alt="Dinner food Image"></div>
+                <h3>Rice & Curry</h3>
+                <p>25$</p>
+            </div>
+        </div>
+    </div>
+    <div class="drinks" id="drinks">
+        <div class="sec1">
+            <div class="food">
+                <div class="foodimage"><img src="images/drinks12.jpg" alt="Dinner food Image"></div>
+                <h3>Dalgona coffee</h3>
+                <p>10$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/drinks5.jpg" alt="Dinner food Image"></div>
+                <h3>Freah lime</h3>
+                <p>10$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/drinks8.jpg" alt="Dinner food Image"></div>
+                <h3>diamond bottle</h3>
+                <p>100$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/drinks2.jpg" alt="Dinner food Image"></div>
+                <h3>Fresh Coffee</h3>
+                <p>5$</p>
+            </div>
+        </div>
+
+        <div class="sec2">
+            <div class="food">
+                <div class="foodimage"><img src="images/drinks13.jpg" alt="Dinner food Image"></div>
+                <h3>Chiyana Chong</h3>
+                <p>45$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/drinks15.jpg" alt="Dinner food Image"></div>
+                <h3>Ballentines Gold</h3>
+                <p>50$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/drinks18.jpg" alt="Dinner food Image"></div>
+                <h3>Whiskey on rocks</h3>
+                <p>30$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/drinks17.jpg" alt="Dinner food Image"></div>
+                <h3>hell fire</h3>
+                <p>35$</p>
+            </div>
+        </div>
+    </div>
+    <div class="salad" id="salad">
+        <div class="sec1">
+            <div class="food">
+                <div class="foodimage"><img src="images/s1.jpg" alt="Salad food Image"></div>
+                <h3>Bread Vegetable</h3>
+                <p>5$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/s2.jpg" alt="Salad food Image"></div>
+                <h3>tomato onion</h3>
+                <p>7$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/s3.jpg" alt="Salad food Image"></div>
+                <h3>cabbage carrot</h3>
+                <p>6$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/s4.jpg" alt="Salad food Image"></div>
+                <h3>Fresh gold</h3>
+                <p>5$</p>
+            </div>
+        </div>
+
+        <div class="sec2">
+            <div class="food">
+                <div class="foodimage"><img src="images/s5.jpg" alt="Salad food Image"></div>
+                <h3>avocado tomato</h3>
+                <p>9$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/s6.jpg" alt="Salad food Image"></div>
+                <h3>White Cucumber</h3>
+                <p>9$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/s7.jpg" alt="Salad food Image"></div>
+                <h3>vintage taste</h3>
+                <p>8$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/s8.jpg" alt="Salad food Image"></div>
+                <h3>ketchupy chips</h3>
+                <p>5$</p>
+            </div>
+        </div>
+    </div>
+    <div class="dessert" id="dessert">
+        <div class="sec1">
+            <div class="food">
+                <div class="foodimage"><img src="images/dessert1.jpg" alt="Dessert food Image"></div>
+                <h3>cocoa cupcake</h3>
+                <p>6$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/dessert2.jpg" alt="Dessert food Image"></div>
+                <h3>vanilla cake</h3>
+                <p>7$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/dessert3.jpg" alt="Dessert food Image"></div>
+                <h3>patisapta cake</h3>
+                <p>7$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/dessert4.jpg" alt="Dessert food Image"></div>
+                <h3>cream cake</h3>
+                <p>5$</p>
+            </div>
+        </div>
+
+        <div class="sec2">
+            <div class="food">
+                <div class="foodimage"><img src="images/dessert5.jpg" alt="Dessert food Image"></div>
+                <h3>vanilla ice cream</h3>
+                <p>3$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/dessert6.jpg" alt="Dessert food Image"></div>
+                <h3>fruit cake</h3>
+                <p>2$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/dessert7.jpg" alt="Dessert food Image"></div>
+                <h3>cadbury cocoa</h3>
+                <p>2$</p>
+            </div>
+            <div class="food">
+                <div class="foodimage"><img src="images/dessert8.jpg" alt="Dessert food Image"></div>
+                <h3>hazelnut cake</h3>
+                <p>8$</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact" id="contact">
+    <div class="background">
+        <div class="contact-card">
+            <div class="heading-icon">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 512 512"><title/>
+                        <g id="Location">
+                            <path d="M382.2709,60.3047a178.5717,178.5717,0,0,0-252.543,0c-59.7305,59.7266-69.2851,154.2344-22.7187,224.7031L249.3217,500.4063a7.9974,7.9974,0,0,0,13.3515,0L404.99,285.0156C451.556,214.5391,442.0053,120.0313,382.2709,60.3047Zm9.3672,215.8906L255.9974,481.4844,120.3607,276.1875C77.9662,212.0313,86.6615,126,141.04,71.6172a162.5775,162.5775,0,0,1,229.918,0C425.3373,125.9922,434.0365,212.0313,391.6381,276.1953Z"/>
+                            <path d="M255.9974,48c-76.3515,0-138.4687,62.1172-138.4687,138.4766,0,76.3515,62.1172,138.4687,138.4687,138.4687,76.3555,0,138.4727-62.1172,138.4727-138.4687C394.47,110.1172,332.3529,48,255.9974,48Zm0,260.9453A122.4727,122.4727,0,1,1,378.47,186.4766,122.6052,122.6052,0,0,1,255.9974,308.9453Z"/>
+                            <path d="M297.267,97.2422c-17.6172,0-31.9492,18.0234-31.9492,40.18,0,18.6621,10.2153,34.25,23.9492,38.748v89.0723a8,8,0,0,0,16,0V176.17c13.7309-4.498,23.9453-20.0879,23.9453-38.748C329.2123,115.2656,314.88,97.2422,297.267,97.2422Zm0,64.3594c-8.6446,0-15.9492-11.07-15.9492-24.18s7.3046-24.18,15.9492-24.18,15.9453,11.07,15.9453,24.18S305.9115,161.6016,297.267,161.6016Z"/>
+                            <path d="M238.681,97.2422a7.9979,7.9979,0,0,0-8,8v40.4062a15.9473,15.9473,0,0,1-31.8945,0V105.2422a8,8,0,1,0-16,0v40.4062a31.9133,31.9133,0,0,0,23.9492,30.8067v88.7871a8,8,0,0,0,16,0V176.4551a31.913,31.913,0,0,0,23.9453-30.8067V105.2422A7.9979,7.9979,0,0,0,238.681,97.2422Z"/>
+                            <path d="M214.7357,144.2188a7.9979,7.9979,0,0,0,8-8V105.2422a8,8,0,1,0-16,0v30.9766A7.998,7.998,0,0,0,214.7357,144.2188Z"/>
+                        </g>
+                    </svg>
+                    <h3>Address</h3>
+                </div>
+                <p>23rd Avenue Mirsarai,<br>Chattagram, Bangladesh.</p>
+            </div>
+            <div class="mobile-icon">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512" viewBox="0 0 80 80" width="512"
+                         data-name="Layer 1">
+                        <path d="m43.265 73a17.958 17.958 0 0 1 -6.772-1.6 50.281 50.281 0 0 1 -15.252-10.823 50.481 50.481 0 0 1 -10.825-15.253c-2.178-5.21-2.124-9.33.149-11.6l5.219-5.224a4.142 4.142 0 0 1 5.848.083l6.6 6.6a4.142 4.142 0 0 1 .083 5.849l-2.958 2.958c-.431.431-.338 1.56.244 2.947a17.94 17.94 0 0 0 3.86 5.419 17.927 17.927 0 0 0 5.419 3.86c1.387.582 2.515.674 2.947.244l2.958-2.96a3.941 3.941 0 0 1 2.926-1.17 4.234 4.234 0 0 1 2.923 1.253l6.6 6.6a4.224 4.224 0 0 1 1.253 2.922 3.989 3.989 0 0 1 -1.17 2.927l-5.217 5.22a6.587 6.587 0 0 1 -4.835 1.748zm-24.633-43.668a2.009 2.009 0 0 0 -1.434.584l-5.219 5.217c-1.638 1.639-1.536 5.071.281 9.417a48.452 48.452 0 0 0 10.4 14.613 48.286 48.286 0 0 0 14.607 10.389c4.344 1.823 7.776 1.928 9.418.286l5.215-5.217a2.141 2.141 0 0 0 -.083-3.021l-6.597-6.6a2.246 2.246 0 0 0 -1.547-.667 1.989 1.989 0 0 0 -1.474.584l-2.958 2.958c-1.063 1.063-2.886 1.13-5.135.186a19.934 19.934 0 0 1 -6.059-4.29 19.934 19.934 0 0 1 -4.29-6.059c-.944-2.248-.878-4.072.186-5.135l2.957-2.958a2.01 2.01 0 0 0 .584-1.474 2.246 2.246 0 0 0 -.667-1.547l-6.6-6.6a2.244 2.244 0 0 0 -1.585-.666z"/>
+                        <path d="m40.265 46.186a1 1 0 0 1 -1-1v-8.695h-2.135a7.328 7.328 0 0 1 -7.32-7.32v-14.851a7.329 7.329 0 0 1 7.32-7.32h26.733a7.329 7.329 0 0 1 7.32 7.32v14.851a7.328 7.328 0 0 1 -7.32 7.32h-13.49l-9.4 9.4a1 1 0 0 1 -.708.295zm-3.135-37.186a5.325 5.325 0 0 0 -5.32 5.32v14.851a5.325 5.325 0 0 0 5.32 5.32h3.135a1 1 0 0 1 1 1v7.281l7.987-7.988a1 1 0 0 1 .707-.293h13.9a5.326 5.326 0 0 0 5.32-5.32v-14.851a5.326 5.326 0 0 0 -5.316-5.32z"/>
+                        <path d="m45.893 22.692h-3.728a3.133 3.133 0 0 1 -3.129-3.13v-6.485a1 1 0 1 1 2 0v6.485a1.131 1.131 0 0 0 1.129 1.13h3.728a1.131 1.131 0 0 0 1.129-1.13v-6.485a1 1 0 1 1 2 0v6.485a3.133 3.133 0 0 1 -3.129 3.13z"/>
+                        <path d="m44.029 32.494a1 1 0 0 1 -1-1v-18.417a1 1 0 1 1 2 0v18.417a1 1 0 0 1 -1 1z"/>
+                        <path d="m58.7 32.494a1 1 0 0 1 -1-1v-7.119h-4.062a1 1 0 0 1 -1-1v-5.24a6.064 6.064 0 0 1 6.062-6.058 1 1 0 0 1 1 1v18.417a1 1 0 0 1 -1 1zm-4.062-10.119h3.062v-8.175a4.066 4.066 0 0 0 -3.058 3.934z"/>
+                    </svg>
+                    <h3>Call Us</h3>
+                </div>
+                <p>00021245698 <br>00012369854</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

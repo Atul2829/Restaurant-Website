@@ -1,0 +1,53 @@
+@import "info";
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  .nav{
+    @include nav-name();
+  }
+  .reservations-status-heading{
+  @include secondary-heading();
+  }
+  .reservation-time{
+    padding: 5% 12%;
+    @include h1();
+    @include h3();
+    @include p();
+    h1{
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+    p{
+      margin-bottom: 0;
+    }
+    .time-sec{
+      margin-bottom: 4rem;
+      .sec {
+        display: flex;
+        justify-content:space-between;
+        text-align: center;
+        &:nth-child(2){
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        .time {
+          border: 1.7px solid purple;
+          width:4rem;
+          height:4rem;
+          border-radius: .4rem;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

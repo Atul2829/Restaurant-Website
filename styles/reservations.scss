@@ -1,0 +1,50 @@
+@import "info";
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  position: relative;
+  height:100vh;
+  .nav {
+    @include nav();
+    .reserve{
+      h1{
+        @include h1();
+        font-family: $h1;
+        color: #B9f1da;
+        transition: .5s;
+
+        &:hover{
+          color:purple;
+        }
+      }
+    }
+  }
+  .reservation-heading{
+    padding:7% 5%;
+    width: 100%;
+    text-align: center;
+    @include h1();
+    @include p();
+    p{
+      text-transform: capitalize;
+    }
+  }
+  .check-btn{
+    position: absolute;
+    @include btn();
+    text-align: center;
+    left:50%;
+    transform: translateX(-50%);
+    button{
+      padding:0 0;
+      width:20rem;
+      height:3rem;
+      text-align: center;
+    }
+  }
+}

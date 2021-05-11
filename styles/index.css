@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body .nav {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: #818181;
+  padding: 0 10%;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+body .nav #ul {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  text-transform: uppercase;
+}
+body .nav #ul a {
+  color: #B9f1da;
+  transition: 0.3s;
+}
+body .nav #ul a:hover {
+  color: purple;
+}
+body .nav #ul .a.active {
+  color: purple;
+}
+body .nav .reserve a button {
+  border: none;
+  background-color: purple;
+  padding: 0.3rem 1rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body .nav .reserve a button:hover {
+  background-color: white;
+  color: purple;
+}
+body .home {
+  height: 100vh;
+  width: 100%;
+  background-color: #292929;
+  padding: 10% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+body .home .home-infos {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 45%;
+  height: 80%;
+}
+body .home .home-infos h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+body .home .home-infos p {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  margin-bottom: 2rem;
+}
+body .home .home-infos .btn-arrow {
+  position: relative;
+  align-items: center;
+  width: 10.93rem;
+}
+body .home .home-infos .btn-arrow a {
+  transition: 5s;
+  width: 10.92rem;
+  background-color: greenyellow;
+  z-index: 91;
+}
+body .home .home-infos .btn-arrow a button {
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  transition: all 0.4s;
+  background-color: purple;
+}
+body .home .home-infos .btn-arrow a button:hover {
+  background-color: #c100c1;
+}
+body .home .home-infos .btn-arrow svg {
+  z-index: 90;
+  position: absolute;
+  width: 1.7rem;
+  height: 1.7rem;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 84%;
+  opacity: 0;
+  transition: 0.7s;
+}
+body .home .home-infos .btn-arrow #svg1 {
+  fill: none;
+  stroke: purple;
+  stroke-width: 5px;
+}
+body .home .home-infos .btn-arrow:hover svg {
+  opacity: 1;
+  z-index: 92;
+  left: 108%;
+}
+body .home .img {
+  margin-top: 5%;
+}
+body .home .img img {
+  width: 28rem;
+  border-radius: 70%;
+}
+body .about {
+  display: flex;
+  align-items: center;
+  padding: 5% 5%;
+  height: 100vh;
+}
+body .about .about-info {
+  width: 50%;
+}
+body .about .about-info h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+body .about .about-info p {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  margin-bottom: 2rem;
+}
+body .about .about-info button {
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  transition: all 0.4s;
+  background-color: purple;
+}
+body .about .about-info button:hover {
+  background-color: #c100c1;
+}
+body .about .about-img {
+  justify-content: flex-end;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+body .about .about-img .sec21, body .about .about-img .sec22 {
+  margin-left: 1rem;
+}
+body .about .about-img .sec12, body .about .about-img .sec22 {
+  margin-top: 1rem;
+}
+body .about .about-img .sec11, body .about .about-img .sec22 {
+  height: 18rem;
+  width: 13rem;
+}
+body .about .about-img .sec21, body .about .about-img .sec12 {
+  width: 13rem;
+  height: 10rem;
+}
+body .about img {
+  width: 100%;
+  height: 100%;
+}
+body .menu {
+  width: 100%;
+  padding: 5% 5%;
+  background-color: #f1f1f1;
+}
+body .menu h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+body .menu h1 {
+  text-align: center;
+}
+body .menu p {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  margin-bottom: 2rem;
+}
+body .menu .para {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+body .menu .para p {
+  width: 65%;
+}
+body .menu .menus-title {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+body .menu .menus-title .radio {
+  display: none;
+}
+body .menu .menus-title .label {
+  padding: 0.5rem 2rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 50px;
+  border: 2px solid #c100c1;
+  cursor: pointer;
+}
+body .menu .menus-title .radio:checked + .label {
+  background-color: purple;
+  color: white;
+  border: 2px solid #e2a8fe;
+}
+body .menu #breakfast, body .menu #lunch, body .menu #dinner, body .menu #drinks, body .menu #salad, body .menu #dessert {
+  width: 80%;
+  margin: 3rem auto 0 auto;
+  background-color: white;
+  padding: 2rem 2rem;
+  border-radius: 30px;
+}
+body .menu #breakfast .sec1, body .menu #breakfast .sec2, body .menu #lunch .sec1, body .menu #lunch .sec2, body .menu #dinner .sec1, body .menu #dinner .sec2, body .menu #drinks .sec1, body .menu #drinks .sec2, body .menu #salad .sec1, body .menu #salad .sec2, body .menu #dessert .sec1, body .menu #dessert .sec2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+body .menu #breakfast .sec1 .foodimage, body .menu #breakfast .sec2 .foodimage, body .menu #lunch .sec1 .foodimage, body .menu #lunch .sec2 .foodimage, body .menu #dinner .sec1 .foodimage, body .menu #dinner .sec2 .foodimage, body .menu #drinks .sec1 .foodimage, body .menu #drinks .sec2 .foodimage, body .menu #salad .sec1 .foodimage, body .menu #salad .sec2 .foodimage, body .menu #dessert .sec1 .foodimage, body .menu #dessert .sec2 .foodimage {
+  height: 10rem;
+  width: 12rem;
+  margin-bottom: 1.1rem;
+}
+body .menu #breakfast .sec1 img, body .menu #breakfast .sec2 img, body .menu #lunch .sec1 img, body .menu #lunch .sec2 img, body .menu #dinner .sec1 img, body .menu #dinner .sec2 img, body .menu #drinks .sec1 img, body .menu #drinks .sec2 img, body .menu #salad .sec1 img, body .menu #salad .sec2 img, body .menu #dessert .sec1 img, body .menu #dessert .sec2 img {
+  width: 100%;
+  height: 100%;
+}
+body .menu #breakfast .sec1 .food, body .menu #breakfast .sec2 .food, body .menu #lunch .sec1 .food, body .menu #lunch .sec2 .food, body .menu #dinner .sec1 .food, body .menu #dinner .sec2 .food, body .menu #drinks .sec1 .food, body .menu #drinks .sec2 .food, body .menu #salad .sec1 .food, body .menu #salad .sec2 .food, body .menu #dessert .sec1 .food, body .menu #dessert .sec2 .food {
+  width: 12rem;
+  height: auto;
+  transition: 0.5s;
+  text-align: center;
+}
+body .menu #breakfast .sec1 .food:hover, body .menu #breakfast .sec2 .food:hover, body .menu #lunch .sec1 .food:hover, body .menu #lunch .sec2 .food:hover, body .menu #dinner .sec1 .food:hover, body .menu #dinner .sec2 .food:hover, body .menu #drinks .sec1 .food:hover, body .menu #drinks .sec2 .food:hover, body .menu #salad .sec1 .food:hover, body .menu #salad .sec2 .food:hover, body .menu #dessert .sec1 .food:hover, body .menu #dessert .sec2 .food:hover {
+  background-color: #ff00ff;
+  color: white;
+}
+body .menu #breakfast .sec1 .food:hover p, body .menu #breakfast .sec2 .food:hover p, body .menu #lunch .sec1 .food:hover p, body .menu #lunch .sec2 .food:hover p, body .menu #dinner .sec1 .food:hover p, body .menu #dinner .sec2 .food:hover p, body .menu #drinks .sec1 .food:hover p, body .menu #drinks .sec2 .food:hover p, body .menu #salad .sec1 .food:hover p, body .menu #salad .sec2 .food:hover p, body .menu #dessert .sec1 .food:hover p, body .menu #dessert .sec2 .food:hover p {
+  color: white;
+}
+body .menu #breakfast .sec1 p, body .menu #breakfast .sec2 p, body .menu #lunch .sec1 p, body .menu #lunch .sec2 p, body .menu #dinner .sec1 p, body .menu #dinner .sec2 p, body .menu #drinks .sec1 p, body .menu #drinks .sec2 p, body .menu #salad .sec1 p, body .menu #salad .sec2 p, body .menu #dessert .sec1 p, body .menu #dessert .sec2 p {
+  margin-bottom: 0;
+  margin-top: 0.2rem;
+}
+body .menu #breakfast .sec1 h3, body .menu #breakfast .sec2 h3, body .menu #lunch .sec1 h3, body .menu #lunch .sec2 h3, body .menu #dinner .sec1 h3, body .menu #dinner .sec2 h3, body .menu #drinks .sec1 h3, body .menu #drinks .sec2 h3, body .menu #salad .sec1 h3, body .menu #salad .sec2 h3, body .menu #dessert .sec1 h3, body .menu #dessert .sec2 h3 {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+body .menu #breakfast .sec1, body .menu #lunch .sec1, body .menu #dinner .sec1, body .menu #drinks .sec1, body .menu #salad .sec1, body .menu #dessert .sec1 {
+  margin-bottom: 2rem;
+}
+body .menu #lunch, body .menu #dinner, body .menu #drinks, body .menu #salad, body .menu #dessert {
+  display: none;
+}
+body .menu #breakfast.inactive, body .menu #lunch.inactive, body .menu #dinner.inactive, body .menu #drinks.inactive, body .menu #salad.inactive, body .menu #dessert.inactive {
+  display: none;
+}
+body .menu #breakfast.active, body .menu #lunch.active, body .menu #dinner.active, body .menu #drinks.active, body .menu #salad.active, body .menu #dessert.active {
+  display: block;
+}
+body .contact {
+  padding: 5% 5%;
+  width: 100%;
+  background-color: #292929;
+}
+body .contact .background {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  background-image: url("../images/map.png");
+}
+body .contact .background .contact-card {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 2rem 1rem;
+  width: 15rem;
+  margin-left: 50rem;
+}
+body .contact .background .contact-card .heading-icon {
+  margin-bottom: 3rem;
+}
+body .contact .background .contact-card p {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  margin-bottom: 2rem;
+}
+body .contact .background .contact-card p {
+  margin-bottom: auto;
+  color: #b0b0b0;
+  font-size: 0.9rem;
+}
+body .contact .background .contact-card h3 {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+body .contact .background .contact-card h3 {
+  color: white;
+}
+body .contact .background .contact-card .icon {
+  display: flex;
+  text-align: center;
+}
+body .contact #Layer_1 {
+  fill: purple;
+  stroke: purple;
+  stroke-width: 3px;
+}
+body .contact svg {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+/*# sourceMappingURL=index.css.map */

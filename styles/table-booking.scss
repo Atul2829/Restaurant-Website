@@ -1,0 +1,132 @@
+@import "info";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  .nav {
+    @include nav();
+    .reserve{
+      h1{
+        @include h1();
+        font-family: $h1;
+        color: #B9f1da;
+        transition: .5s;
+
+        &:hover{
+          color:purple;
+        }
+      }
+    }
+
+  }
+  .booking-heading {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width:100%;
+    padding: 7% 5%;
+    .heading {
+      position: relative;
+      @include h1();
+      @include p();
+      width:100%;
+      p {
+        width: 60%;
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .form {
+    form {
+      color: black;
+      text-align: start;
+      label {
+        font-family: $p;
+        margin-bottom: 2rem;
+        color: purple;
+      }
+      input, select{
+        font-size: 1rem;
+        width: 20rem;
+        height:3rem;
+        background-color: #e3e3e3;
+        border:none;
+        color: #424242;
+        padding-right:4%;
+        &::placeholder{
+          color: #424242;
+        }
+      }
+      select{
+        option{
+          font-family: $p;
+          font-size: 1rem;
+          padding:.5rem .5rem;
+        }
+      }
+      input:focus{
+        border:1px solid purple;
+      }
+      .form-flex{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        width:100%;
+        .form-label{
+          background-color: #f1f1f1;
+          padding:5% 5%;
+          .name, .mobile,.email, .number, .date, .time{
+            padding-left: 1%;
+          }
+          .date{
+            font-size: 1rem;
+          }
+        }
+        @include btn();
+        button{
+          width:100%;
+        }
+      }
+    }
+  }
+  .chair{
+    padding: 7% 10% 3.5% 10%;
+    text-align: center;
+    @include h1();
+    .chair-sec1{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+      .chair-image{
+        height:18rem;
+        width: 15rem;
+      }
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .chair-sec2{
+      display: flex;
+      justify-content: space-between;
+      .chair-image{
+        height:12rem;
+        width: 15rem;
+      }
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

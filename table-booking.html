@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Your Table</title>
+    <link rel="stylesheet" href="./styles/table-booking.css">
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html" class="active">Reservations</a></li>
+        <li><a href="index.html">Menu</a></li>
+        <li><a href="index.html">Contact</a></li>
+    </ul>
+    <div class="reserve">
+        <a href="index.html">
+            <h1>ATK</h1>
+
+        </a>
+    </div>
+</div>
+<div class="booking-heading">
+    <div class="heading">
+        <h1>Book your table</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ea eligendi est non placeat sed voluptas. Esse fugiat impedit ipsam labore recusandae temporibus!</p>
+    </div>
+</div>
+<div class="form">
+<form action="table-booking.php" method="post">
+    <div class="form-flex">
+        <div class="form-label">
+            <label for="name">Name:</label><br><br>
+            <input required type="text" id="name" class="name" name="name" placeholder="Enter Your Name"><br><br><br>
+            <label for="mobile">Mobile No:</label><br><br>
+            <input required type="tel" id="mobile" class="mobile" name="mobile" placeholder="Enter Your Mobile No"><br><br><br>
+            <label for="email">Email</label><br><br>
+            <input required type="text" id="email" class="email" name="email" placeholder="Enter Your Email"><br><br><br>
+            <label for="number">Party Size</label><br><br>
+            <input required type="number" id="number" class="number" name="number" placeholder="Enter Your Number Of Person"><br><br><br>
+            <label for="date">Date for Reservation</label><br><br>
+            <input required type="date" id="date" class="date" name="date"><br><br><br>
+            <label for="time">Time of Arrival</label><br><br>
+            <select required id="time" class="time" name="time">
+                <option value="">--Select Your Time--</option>
+                <option value="9.00 AM">9.00 AM</option>
+                <option value="10.00 AM">10.00 AM</option>
+                <option value="12.00 PM">12.00 PM</option>
+                <option value="1.00 PM">1.00 PM</option>
+                <option value="3.00 PM">3.00 PM</option>
+                <option value="6.00 PM">6.00 PM</option>
+                <option value="7.00 PM">7.00 PM</option>
+                <option value="8.00 PM">8.00 PM</option>
+            </select><br><br><br>
+            <button type="submit" name="button">Send for reservation</button>
+        </div>
+    </div>
+</form>
+</div>
+<div class="chair">
+    <h1>Our table & chair position</h1>
+    <div class="chair-sec1">
+        <div class="chair-image">
+            <img src="./images/chair3.jpg" alt="">
+        </div>
+        <div class="chair-image">
+            <img src="./images/chair4.jpg" alt="">
+        </div>
+        <div class="chair-image">
+            <img src="./images/chair6.jpg" alt="">
+        </div>
+        <div class="chair-image">
+            <img src="./images/chair7.jpg" alt="">
+        </div>
+    </div>
+    <div class="chair-sec2">
+        <div class="chair-image">
+            <img src="./images/chair1.jpg" alt="">
+        </div>
+        <div class="chair-image">
+            <img src="./images/chair2.jpg" alt="">
+        </div>
+        <div class="chair-image">
+            <img src="./images/chair5.jpg" alt="">
+        </div>
+        <div class="chair-image">
+            <img src="./images/chair8.jpg" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>

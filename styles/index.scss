@@ -1,0 +1,302 @@
+@import "info";
+
+@mixin food-section {
+  width: 80%;
+  margin: 3rem auto 0 auto;
+  background-color: white;
+  padding: 2rem 2rem;
+  border-radius: 30px;
+  .sec1, .sec2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .foodimage {
+      height: 10rem;
+      width: 12rem;
+      margin-bottom: 1.1rem;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .food {
+      width: 12rem;
+      height: auto;
+      transition: .5s;
+      text-align: center;
+      &:hover {
+        background-color: #ff00ff;
+        color: white;
+      }
+      &:hover p {
+        color: white;
+      }
+    }
+    p {
+      margin-bottom: 0;
+      margin-top: .2rem;
+    }
+    @include h3();
+  }
+  .sec1 {
+    margin-bottom: 2rem;
+  }
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+body {
+  .nav {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: #818181;
+    padding: 0 10%;
+    justify-content: space-between;
+    font-family: $p;
+    width: 100%;
+    #ul {
+      height: 8vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 55%;
+      text-transform: uppercase;
+
+      a {
+        color: #B9f1da;
+        transition: .3s;
+        &:hover {
+          color: purple;
+        }
+      }
+      .a.active {
+        color: purple;
+      }
+    }
+    .reserve {
+      a {
+        button {
+          border: none;
+          background-color: purple;
+          padding: .3rem 1rem;
+          text-transform: uppercase;
+          font-family: $p;
+          font-size: .9rem;
+          font-weight: 500;
+          color: white;
+          cursor: pointer;
+          transition: .5s;
+          &:hover {
+            background-color: white;
+            color: purple;
+          }
+        }
+      }
+    }
+  }
+  .home {
+    height: 100vh;
+    width: 100%;
+    background-color: #292929;
+    padding: 10% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    .home-infos {
+      margin-top: 4rem;
+      @include between();
+      flex-direction: column;
+      width: 45%;
+      height: 80%;
+      @include h1();
+
+      @include p();
+
+      .btn-arrow {
+        position: relative;
+        align-items: center;
+        width: 10.93rem;
+        a {
+          transition: 5s;
+          @include btn();
+          width: 10.92rem;
+          background-color: greenyellow;
+          z-index: 91;
+        }
+        svg {
+          z-index: 90;
+          position: absolute;
+          width: 1.7rem;
+          height: 1.7rem;
+          bottom: 50%;
+          transform: translateY(50%);
+          left: 84%;
+          opacity: 0;
+          transition: .7s;
+        }
+        #svg1 {
+          fill: none;
+          stroke: purple;
+          stroke-width: 5px;
+        }
+        &:hover svg {
+          opacity: 1;
+          z-index: 92;
+          left: 108%;
+        }
+      }
+    }
+    .img {
+      margin-top: 5%;
+      img {
+        width: 28rem;
+        border-radius: 70%;
+      }
+    }
+  }
+  .about {
+    @include center();
+    padding: 5% 5%;
+    height: 100vh;
+    .about-info {
+      width: 50%;
+      @include h1();
+      @include p();
+      @include btn();
+    }
+    .about-img {
+      justify-content: flex-end;
+      width: 50%;
+      @include center();
+      .sec21, .sec22 {
+        margin-left: 1rem;
+      }
+      .sec12, .sec22 {
+        margin-top: 1rem;
+      }
+      .sec11, .sec22 {
+        height: 18rem;
+        width: 13rem;
+      }
+      .sec21, .sec12 {
+        width: 13rem;
+        height: 10rem;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .menu {
+    width: 100%;
+    @include padding();
+    @include h1();
+    h1 {
+      text-align: center;
+    }
+    @include p();
+    .para {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 1rem;
+      p {
+        width: 65%;
+      }
+    }
+    background-color: #f1f1f1;
+    .menus-title {
+      width: 70%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .radio {
+        display: none;
+      }
+      .label {
+        padding: .5rem 2rem;
+        font-family: $p;
+        border-radius: 50px;
+        border: 2px solid #c100c1;
+        cursor: pointer;
+      }
+      .radio:checked + .label {
+        background-color: purple;
+        color: white;
+        //border:none;
+        border: 2px solid #e2a8fe;
+      }
+    }
+    #breakfast, #lunch, #dinner, #drinks, #salad, #dessert {
+      @include food-section();
+    }
+    #lunch, #dinner, #drinks, #salad, #dessert {
+      display: none;
+    }
+    #breakfast.inactive, #lunch.inactive, #dinner.inactive, #drinks.inactive, #salad.inactive, #dessert.inactive {
+      display: none;
+    }
+    #breakfast.active, #lunch.active, #dinner.active, #drinks.active, #salad.active, #dessert.active {
+      display: block;
+    }
+  }
+
+  .contact {
+    @include padding();
+    width: 100%;
+    background-color: #292929;
+    .background {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 60vh;
+      background-image: url("../images/map.png");
+      .contact-card {
+        background: rgba(0, 0, 0, .9);
+        padding: 2rem 1rem;
+        width: 15rem;
+
+        margin-left: 50rem;
+        .heading-icon {
+          margin-bottom: 3rem;
+        }
+        @include p();
+        p {
+          margin-bottom: auto;
+          color: #b0b0b0;
+          font-size: .9rem;
+        }
+        @include h3();
+        h3 {
+          color: white;
+        }
+        .icon {
+          display: flex;
+          text-align: center;
+        }
+      }
+    }
+
+    #Layer_1 {
+      fill: purple;
+      stroke: purple;
+      stroke-width: 3px;
+    }
+    svg {
+      height: 2rem;
+      width: 2rem;
+      margin-right: .5rem;
+    }
+  }
+}
